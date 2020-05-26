@@ -81,7 +81,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: red 2px solid;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -123,9 +123,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+nav {
+  background-color: white;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+nav a {
+  padding: 0 2.5%;
+  margin-top: 1.2%;
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
 * {
   box-sizing: border-box;
 }
-html {
-  background-color: red;
+body {
+  font-family: 'Rokkitt', serif;
+}
+#Container {
+  margin: 0 auto;
+}
+#Container header {
+  background-image: url(../Images/159046727214210744.png);
+  height: 90vh;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#Container header h1 {
+  color: black;
+  font-size: 1.5rem;
+}
+#Container header h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 4rem;
+  color: white;
+}
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rokkitt/v18/qFdb35qfgYFjGy5hukqqhw5XeRgdi1ryd5DL.ttf) format('truetype');
 }
