@@ -81,7 +81,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: red 2px solid;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -128,7 +127,7 @@ nav {
   height: 70px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 nav a {
   padding: 0 2.5%;
@@ -137,6 +136,9 @@ nav a {
   font-size: 2rem;
   color: black;
 }
+nav img {
+  margin-top: 0.2%;
+}
 * {
   box-sizing: border-box;
 }
@@ -144,10 +146,11 @@ body {
   font-family: 'Rokkitt', serif;
 }
 #Container {
+  width: 100%;
   margin: 0 auto;
 }
 #Container header {
-  background-image: url(../Images/159046727214210744.png);
+  background-image: url(../Images/Workout\ class.jpg);
   height: 90vh;
   margin: 0 auto;
   background-position: center;
@@ -165,6 +168,56 @@ body {
   margin-top: 5%;
   font-size: 4rem;
   color: white;
+  background-color: black;
+}
+#Container .mission-statement {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  background-color: firebrick;
+}
+#Container .mission-statement img {
+  width: 500px;
+  height: 300 px;
+}
+#Container .mission-statement .writingAreaOne {
+  color: white;
+}
+#Container .mission-statement .writingAreaOne h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  margin: 5%;
+  text-align: center;
+}
+#Container .mission-statement .writingAreaOne p {
+  margin: 5%;
+}
+#Container .mission-statement .writingAreaOne form {
+  text-align: center;
+}
+#Container .aboutApp {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+#Container .aboutApp img {
+  width: 300px;
+  height: 250px;
+  padding: 0 2%;
+}
+#Container .aboutApp .writingAreaTwo {
+  background-color: black;
+  color: white;
+}
+#Container .aboutApp .writingAreaTwo h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  text-align: center;
+}
+#Container .aboutApp .writingAreaTwo p {
+  margin: 5%;
 }
 @font-face {
   font-family: 'Rokkitt';
