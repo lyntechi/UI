@@ -123,21 +123,27 @@ table {
   border-spacing: 0;
 }
 nav {
-  background-color: white;
-  height: 70px;
+  background-color: #1b1b1b;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 nav a {
-  padding: 0 2.5%;
-  margin-top: 1.2%;
+  margin-top: 1.9%;
   text-decoration: none;
   font-size: 2rem;
-  color: black;
+  color: ghostwhite;
+}
+nav a:hover {
+  background-color: gray;
 }
 nav img {
   margin-top: 0.2%;
+}
+nav h1 {
+  color: ghostwhite;
+  font-size: 3rem;
+  margin-top: 1.2%;
 }
 * {
   box-sizing: border-box;
@@ -150,7 +156,7 @@ body {
   margin: 0 auto;
 }
 #Container header {
-  background-image: url(../Images/Workout\ class.jpg);
+  background-image: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   height: 90vh;
   margin: 0 auto;
   background-position: center;
@@ -158,71 +164,152 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-#Container header h1 {
-  color: black;
-  font-size: 1.5rem;
-}
-#Container header h2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-  font-size: 4rem;
-  color: white;
-  background-color: black;
-}
-#Container .mission-statement {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
-  background-color: firebrick;
-}
-#Container .mission-statement img {
-  width: 500px;
-  height: 300 px;
-}
-#Container .mission-statement .writingAreaOne {
-  color: white;
-}
-#Container .mission-statement .writingAreaOne h2 {
+#Container header .heading {
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
+  align-items: center;
+}
+#Container header .heading h2 {
+  display: flex;
+  margin-top: 5%;
+  font-size: 3.2rem;
+  color: black;
+  letter-spacing: 10px;
+  font-family: 'Graduate', cursive;
+  padding: 1%;
+  background-color: white;
+  opacity: 0.6;
+}
+#Container header .heading button {
+  margin-top: 5%;
+  padding: 0.8%;
+  width: 25%;
+  align-items: center;
+  background-colOr: black;
+  border-radius: 50px;
+  text-align: center;
+}
+#Container header .heading button:hover {
+  background-color: grey;
+}
+#Container header .heading button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: ghostwhite;
+}
+#Container .aboutUs {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 3% 20%;
+}
+#Container .aboutUs h2 {
+  font-size: 2.8rem;
+  color: rebeccapurple;
+  margin-bottom: 4%;
+}
+#Container .aboutUs p {
+  font-size: 1.4rem;
+  color: gray;
+  letter-spacing: 1.5px;
+}
+#Container .steps {
+  background-image: url(https://images.unsplash.com/photo-1572981872601-f290409c0bdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  height: 60vh;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#Container .steps .stepsInfo {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  width: 30%;
+  opacity: 0.7;
+  margin: 2%;
+}
+#Container .steps .stepsInfo h2 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 4%;
+  color: blue;
+}
+#Container .steps .stepsInfo h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 4%;
+  background-color: blueviolet;
+}
+#Container .steps .stepsInfo p {
+  font-size: 1.4rem;
+  color: white;
+  letter-spacing: 1.9px;
+  padding: 5%;
+}
+#Container .missionStatement {
+  margin: 2% 0;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+}
+#Container .missionStatement h2 {
   font-size: 3rem;
-  margin: 5%;
-  text-align: center;
+  color: black;
+  padding: 2%;
 }
-#Container .mission-statement .writingAreaOne p {
-  margin: 5%;
+#Container .missionStatement p {
+  font-size: 1.3rem;
 }
-#Container .mission-statement .writingAreaOne form {
-  text-align: center;
+#Container .fitnessImages {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 4% 0;
+}
+#Container .fitnessImages img {
+  width: 450px;
 }
 #Container .aboutApp {
   display: flex;
   flex-direction: row;
-  margin-top: 5%;
 }
 #Container .aboutApp img {
-  width: 300px;
-  height: 250px;
-  padding: 0 2%;
+  width: 380px;
+  height: 400px;
 }
 #Container .aboutApp .writingAreaTwo {
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: row-reverse;
 }
 #Container .aboutApp .writingAreaTwo h2 {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2.2rem;
   text-align: center;
+  padding-top: 2%;
+  letter-spacing: 1.5px;
+  line-height: 34px;
 }
-#Container .aboutApp .writingAreaTwo p {
-  margin: 5%;
+#Container .aboutApp .writingAreaTwo img {
+  width: 350px;
+  height: 220px;
 }
 @font-face {
-  font-family: 'Rokkitt';
+  font-family: 'Graduate';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rokkitt/v18/qFdb35qfgYFjGy5hukqqhw5XeRgdi1ryd5DL.ttf) format('truetype');
+  src: local('Graduate'), local('Graduate-Regular'), url(https://fonts.gstatic.com/s/graduate/v7/C8cg4cs3o2n15t_2YxgR.ttf) format('truetype');
 }
