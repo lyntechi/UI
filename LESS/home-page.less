@@ -30,7 +30,7 @@
       h2 {
           display: flex;
           margin-top: 5%;
-          font-size: 3.2rem;
+          font-size: 2rem;
           color: black;
           letter-spacing: 10px;
           font-family: 'Graduate', cursive;
@@ -44,23 +44,23 @@
                 
 
       button {
-        margin-top: 5%;    
-        padding: 0.8%;
-        width:25%;
-        align-items: center;
-        background-colOr:black;
-        border-radius: 50px;
-        text-align: center;
-        &:hover{
-            background-color:grey;
+     margin-top: 5%;    
+     padding: 0.8%;
+       width:25%;
+       align-items: center;
+       background-colOr:black;
+        
+     text-align: center;
+     &:hover{
+      background-color:grey;
             
-        }//this closes hover
-        a{
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: ghostwhite;
-        }//this closes a
-        }//this closes button
+      }//this closes hover
+    a{
+    text-decoration: none;
+    font-size: 1.2rem;
+     color: ghostwhite;
+    }//this closes a
+    }//this closes button
     }//this closes heading class
     }//this closes header
 
@@ -89,23 +89,27 @@
 
 .steps{
     background-image: url(https://images.unsplash.com/photo-1572981872601-f290409c0bdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    height: 60vh; 
-      margin: 0 auto;
+    height: 75vh;
       background-position: center; 
       background-repeat: no-repeat; 
       background-size: cover;
-      width: 100%;
       display: flex;
       flex-direction: row;
+    
+    
+      
      
 
     .stepsInfo{
         display: flex;
         flex-direction: column;
         background-color: grey;
-        width: 30%;
         opacity: 0.7;
+        text-align: center;
         margin: 2%;
+        width: 100%;
+        
+       
     h2{
         font-size: 3.2rem;
         text-align: center;
@@ -122,10 +126,11 @@
         
     }//this closes h3
     p{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: white;
         letter-spacing: 1.9px;
-        padding: 5%;
+        margin: 4%;
+        
         
     }//this closes p
 
@@ -134,17 +139,19 @@
 
 
     .missionStatement{
-        margin: 2% 0;
+        // margin: 2% 0;
 background-color: gainsboro;
     display: flex;
     flex-direction: column;
     height: 300px;
     align-items: center;
+    
 
         h2{
+            
             font-size: 3rem;
             color: black;
-            padding: 2%;
+            padding: 4%;
         }//this closes h2
 
         p {
@@ -160,11 +167,12 @@ background-color: gainsboro;
         display: flex;
         flex-direction: row;
     width: 100%;
-        justify-content:space-evenly;
-        margin: 4% 0;
+    opacity: 0.8;
+        // justify-content:space-evenly;
+        // margin: 4% 0;
         
         img {
-            width:450px;
+            width:33.3%;
          
         
             
@@ -173,19 +181,15 @@ background-color: gainsboro;
     .aboutApp{
         display: flex;
         flex-direction: row;
-    
-    
-        img {
-            width:380px;
-            height:400px;
-            
-        
-        }//this closes img
+        width: 100%;
+       
         .writingAreaTwo{
             background-color: black;
             color: white;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
+        padding: 8% 0;
+        width: 100%;
         
             h2{
                 display:flex;
@@ -194,12 +198,17 @@ background-color: gainsboro;
                 text-align: center;
                 padding-top: 2%;
                 letter-spacing: 1.5px;
-                line-height: 34px;
+                line-height: 45px;
             }//this closes h2
         img {
-            width:350px;
-            height:220px;
             
+            width:300px;
+            height:100px;
+            
+        }
+        .alinks {
+            margin-top: 2%;
+           text-align: center;
         }
         
         }//this closes writingAreaTwo class
