@@ -1,3 +1,6 @@
+.myheader {
+  border: 2px dashed green;
+}
 html,
 body,
 div,
@@ -253,6 +256,7 @@ body {
   color: white;
   letter-spacing: 1.9px;
   margin: 4%;
+  line-height: 22px;
 }
 #Container .missionStatement {
   background-color: gainsboro;
@@ -307,6 +311,9 @@ body {
 #Container .aboutApp .writingAreaTwo .alinks {
   margin-top: 2%;
   text-align: center;
+}
+body {
+  background-color: aqua;
 }
 @font-face {
   font-family: 'Graduate';
