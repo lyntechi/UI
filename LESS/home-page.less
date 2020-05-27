@@ -19,13 +19,17 @@
       background-repeat: no-repeat; 
       background-size: cover;
       background-attachment: fixed;
-            
+      @media @mobile{
+        height:600px;
+    }//this closes media query for heading
       .heading {
           display: flex;
           flex-direction: column;
           margin-top:10%;
           align-items: center;
-      
+          @media @mobile{
+            text-align: center;
+        }//this closes media query for heading
           
       h2 {
           display: flex;
@@ -61,6 +65,11 @@
        font-size: 1.2rem;
         color: @ghostwhite;
        }//this closes a
+
+       @media @mobile{
+        .button-styles(40%,3%,100%);
+        border-radius: 0;
+        }//this closes media query for heading
        }//this closes button
     }//this closes heading class
     }//this closes header
@@ -73,20 +82,31 @@
     align-items: center;
     width: 60%;
     margin: 3% 20%;
-    
+    @media @mobile{
+        text-align: center;
+        width: 80%;
+        align-items:  center;
+        margin: 10%;
+    }//this closes media query for .aboutUs
 
     h2{
      font-size: 2.8rem;
      color: @rebeccapurple;
      margin-bottom: 4%;
+     @media @mobile{
+        font-size: 2.1rem;
+    }//this closes media query for h2
    
     }//this closes h2
     p{
         font-size: 1.4rem;
         color: @gray;
         letter-spacing: 1.5px;
-        
-    }
+        @media @mobile{
+            text-align: center;
+            // margin-top: 5%;
+        }//this closes media query for p
+    }//this closes p
  }//this closes aboutUs
 
 .steps{
@@ -97,7 +117,11 @@
       background-size: cover;
       display: flex;
       flex-direction: row;
-    
+      @media @mobile{
+        display: flex;
+        flex-direction: column;
+        height: 680px;
+    }//this closes media query for .steps
     
       
      
@@ -110,13 +134,19 @@
         text-align: center;
         margin: 2%;
         width: 100%;
-        
+        @media @mobile{
+            width: 96%;
+          
+        }//this closes media query for .stepsInfo
        
     h2{
         font-size: 3.2rem;
         text-align: center;
         margin: 4%;
         color: @ghostwhite;
+        @media @mobile{
+            font-size: 1.4rem;
+        }//this closes media query for h2
        
         
     }//this closes h2
@@ -126,7 +156,10 @@
         margin: 4%;
         background-color:@darkviolet;
         color: @ghostwhite;
-        
+        @media @mobile{
+           margin:0;
+           font-size: 1.3rem;
+        }//this closes media query for h3
     }//this closes h3
     p{
         font-size: 1.2rem;
@@ -134,7 +167,10 @@
         letter-spacing: 1.9px;
         margin: 4%;
         line-height: 22px;
-        
+        @media @mobile{
+            letter-spacing: 0;
+            font-size: 1rem;
+        }//this closes media query for heading
         
     }//this closes p
 
@@ -150,13 +186,19 @@
    
     height: 300px;
     align-items: center;
-    
+    @media @mobile{
+        text-align: center;
+        
+    }//this closes media query for .missionStatement
 
         h2{
             
             font-size: 3rem;
             color: @black;
             padding: 4%;
+            @media @mobile{
+                margin:8%;
+            }//this closes media query for h2
         }//this closes h2
 
         p {
@@ -175,10 +217,16 @@
     opacity: 0.8;
         // justify-content:space-evenly;
         // margin: 4% 0;
-        
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }//this closes media query for fitnessImages
         img {
             width:33.3%;
-         
+            @media @mobile{
+                width: 100%;
+            }//this closes media query for img
         
             
         }//this closes img
@@ -204,17 +252,27 @@
                 padding-top: 2%;
                 letter-spacing: 1.5px;
                 line-height: 45px;
+                @media @mobile{
+                    font-size: 1.5rem;
+                    
+                }//this closes media query for h2
             }//this closes h2
         img {
             
             width:300px;
             height:100px;
-            
+            @media @mobile{
+                // margin: 2%;
+            }//this closes media query for img
         }
         .alinks {
             margin-top: 2%;
            text-align: center;
-        }
+           @media @mobile{
+            display: flex;
+            flex-direction: row;
+        }//this closes media query for alinks
+        }//this closes alinks
         
         }//this closes writingAreaTwo class
 }//this closes aboutApp class

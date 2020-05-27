@@ -4,10 +4,11 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    // @mobile {
-    //     display:flex;
-    //     flex-direction: column;
-    // }
+    @media @mobile {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }//this closes media query for nav
     
     a {
     
@@ -20,6 +21,11 @@ nav{
             background-color:@gray;
            
         }//this closes hover
+
+        @media @mobile{
+            font-size: 1.7rem;
+        }//this closes media query for a links
+
     }//this closes a
     img {
        
@@ -29,6 +35,8 @@ nav{
         color: @ghostwhite;
         font-size: 3rem;
         margin-top: 1.2%;
-     
+        @media @mobile{
+            font-size: 2.6rem;
+        }//this closes media query for h1
     }//this closes h1
 }//this closes nav

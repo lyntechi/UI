@@ -128,6 +128,13 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 nav a {
   margin-top: 1.9%;
   text-decoration: none;
@@ -137,6 +144,11 @@ nav a {
 nav a:hover {
   background-color: gray;
 }
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.7rem;
+  }
+}
 nav img {
   margin-top: 0.2%;
 }
@@ -144,6 +156,11 @@ nav h1 {
   color: ghostwhite;
   font-size: 3rem;
   margin-top: 1.2%;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    font-size: 2.6rem;
+  }
 }
 * {
   box-sizing: border-box;
@@ -164,11 +181,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+@media (max-width: 500px) {
+  #Container header {
+    height: 600px;
+  }
+}
 #Container header .heading {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
   align-items: center;
+}
+@media (max-width: 500px) {
+  #Container header .heading {
+    text-align: center;
+  }
 }
 #Container header .heading h2 {
   display: flex;
@@ -199,6 +226,14 @@ body {
   font-size: 1.2rem;
   color: ghostwhite;
 }
+@media (max-width: 500px) {
+  #Container header .heading button {
+    margin-top: 40%;
+    padding: 3%;
+    width: 100%;
+    border-radius: 0;
+  }
+}
 #Container .aboutUs {
   background-color: #FFFFFF;
   display: flex;
@@ -207,15 +242,33 @@ body {
   width: 60%;
   margin: 3% 20%;
 }
+@media (max-width: 500px) {
+  #Container .aboutUs {
+    text-align: center;
+    width: 80%;
+    align-items: center;
+    margin: 10%;
+  }
+}
 #Container .aboutUs h2 {
   font-size: 2.8rem;
   color: rebeccapurple;
   margin-bottom: 4%;
 }
+@media (max-width: 500px) {
+  #Container .aboutUs h2 {
+    font-size: 2.1rem;
+  }
+}
 #Container .aboutUs p {
   font-size: 1.4rem;
   color: gray;
   letter-spacing: 1.5px;
+}
+@media (max-width: 500px) {
+  #Container .aboutUs p {
+    text-align: center;
+  }
 }
 #Container .steps {
   background-image: url(https://images.unsplash.com/photo-1572981872601-f290409c0bdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
@@ -226,6 +279,13 @@ body {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  #Container .steps {
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+  }
+}
 #Container .steps .stepsInfo {
   display: flex;
   flex-direction: column;
@@ -235,11 +295,21 @@ body {
   margin: 2%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  #Container .steps .stepsInfo {
+    width: 96%;
+  }
+}
 #Container .steps .stepsInfo h2 {
   font-size: 3.2rem;
   text-align: center;
   margin: 4%;
   color: ghostwhite;
+}
+@media (max-width: 500px) {
+  #Container .steps .stepsInfo h2 {
+    font-size: 1.4rem;
+  }
 }
 #Container .steps .stepsInfo h3 {
   font-size: 2.2rem;
@@ -248,12 +318,24 @@ body {
   background-color: darkviolet;
   color: ghostwhite;
 }
+@media (max-width: 500px) {
+  #Container .steps .stepsInfo h3 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+}
 #Container .steps .stepsInfo p {
   font-size: 1.2rem;
   color: #FFFFFF;
   letter-spacing: 1.9px;
   margin: 4%;
   line-height: 22px;
+}
+@media (max-width: 500px) {
+  #Container .steps .stepsInfo p {
+    letter-spacing: 0;
+    font-size: 1rem;
+  }
 }
 #Container .missionStatement {
   background-color: gainsboro;
@@ -262,10 +344,20 @@ body {
   height: 300px;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #Container .missionStatement {
+    text-align: center;
+  }
+}
 #Container .missionStatement h2 {
   font-size: 3rem;
   color: black;
   padding: 4%;
+}
+@media (max-width: 500px) {
+  #Container .missionStatement h2 {
+    margin: 8%;
+  }
 }
 #Container .missionStatement p {
   font-size: 1.3rem;
@@ -276,8 +368,20 @@ body {
   width: 100%;
   opacity: 0.8;
 }
+@media (max-width: 500px) {
+  #Container .fitnessImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #Container .fitnessImages img {
   width: 33.3%;
+}
+@media (max-width: 500px) {
+  #Container .fitnessImages img {
+    width: 100%;
+  }
 }
 #Container .aboutApp {
   display: flex;
@@ -301,13 +405,26 @@ body {
   letter-spacing: 1.5px;
   line-height: 45px;
 }
+@media (max-width: 500px) {
+  #Container .aboutApp .writingAreaTwo h2 {
+    font-size: 1.5rem;
+  }
+}
 #Container .aboutApp .writingAreaTwo img {
   width: 300px;
   height: 100px;
 }
+@media (max-width: 500px) {
+}
 #Container .aboutApp .writingAreaTwo .alinks {
   margin-top: 2%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  #Container .aboutApp .writingAreaTwo .alinks {
+    display: flex;
+    flex-direction: row;
+  }
 }
 @font-face {
   font-family: 'Graduate';
