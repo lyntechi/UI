@@ -1,20 +1,23 @@
 nav{
-   background-color: rgb(27, 27, 27);
+   background-color: @nav;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-   
+    // @mobile {
+    //     display:flex;
+    //     flex-direction: column;
+    // }
     
     a {
     
-        
+      
         margin-top: 1.9%;
         text-decoration: none;
         font-size: 2rem;
-        color: ghostwhite;
+        color: @ghostwhite;
         &:hover{
-            background-color:gray;
+            background-color:@gray;
            
         }//this closes hover
     }//this closes a
@@ -23,7 +26,7 @@ nav{
         margin-top: 0.2%;
     }//this closes img
     h1{
-        color: ghostwhite;
+        color: @ghostwhite;
         font-size: 3rem;
         margin-top: 1.2%;
      
