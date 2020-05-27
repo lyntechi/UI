@@ -182,11 +182,13 @@ body {
   opacity: 0.6;
 }
 #Container header .heading button {
-  margin-top: 5%;
+  margin-top: 10%;
   padding: 0.8%;
-  width: 25%;
+  width: 20%;
   align-items: center;
   background-colOr: black;
+  color: white;
+  border-radius: 25px;
   text-align: center;
 }
 #Container header .heading button:hover {
@@ -237,13 +239,14 @@ body {
   font-size: 3.2rem;
   text-align: center;
   margin: 4%;
-  color: blue;
+  color: ghostwhite;
 }
 #Container .steps .stepsInfo h3 {
   font-size: 2.2rem;
   text-align: center;
   margin: 4%;
-  background-color: blueviolet;
+  background-color: darkviolet;
+  color: ghostwhite;
 }
 #Container .steps .stepsInfo p {
   font-size: 1.2rem;
