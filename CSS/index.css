@@ -1,0 +1,314 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+nav {
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+nav a {
+  margin-top: 1.9%;
+  text-decoration: none;
+  font-size: 2rem;
+  color: ghostwhite;
+}
+nav a:hover {
+  background-color: gray;
+}
+nav img {
+  margin-top: 0.2%;
+}
+nav h1 {
+  color: ghostwhite;
+  font-size: 3rem;
+  margin-top: 1.2%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Rokkitt', serif;
+}
+#Container {
+  width: 100%;
+  margin: 0 auto;
+}
+#Container header {
+  background-image: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  height: 90vh;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#Container header .heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  align-items: center;
+}
+#Container header .heading h2 {
+  display: flex;
+  margin-top: 5%;
+  font-size: 2rem;
+  color: black;
+  letter-spacing: 10px;
+  font-family: 'Graduate', cursive;
+  padding: 1%;
+  background-color: white;
+  opacity: 0.6;
+}
+#Container header .heading button {
+  margin-top: 5%;
+  padding: 0.8%;
+  width: 25%;
+  align-items: center;
+  background-colOr: black;
+  text-align: center;
+}
+#Container header .heading button:hover {
+  background-color: grey;
+}
+#Container header .heading button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: ghostwhite;
+}
+#Container .aboutUs {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 3% 20%;
+}
+#Container .aboutUs h2 {
+  font-size: 2.8rem;
+  color: rebeccapurple;
+  margin-bottom: 4%;
+}
+#Container .aboutUs p {
+  font-size: 1.4rem;
+  color: gray;
+  letter-spacing: 1.5px;
+}
+#Container .steps {
+  background-image: url(https://images.unsplash.com/photo-1572981872601-f290409c0bdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+#Container .steps .stepsInfo {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  opacity: 0.7;
+  text-align: center;
+  margin: 2%;
+  width: 100%;
+}
+#Container .steps .stepsInfo h2 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 4%;
+  color: blue;
+}
+#Container .steps .stepsInfo h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 4%;
+  background-color: blueviolet;
+}
+#Container .steps .stepsInfo p {
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1.9px;
+  margin: 4%;
+}
+#Container .missionStatement {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+}
+#Container .missionStatement h2 {
+  font-size: 3rem;
+  color: black;
+  padding: 4%;
+}
+#Container .missionStatement p {
+  font-size: 1.3rem;
+}
+#Container .fitnessImages {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  opacity: 0.8;
+}
+#Container .fitnessImages img {
+  width: 33.3%;
+}
+#Container .aboutApp {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#Container .aboutApp .writingAreaTwo {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 8% 0;
+  width: 100%;
+}
+#Container .aboutApp .writingAreaTwo h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 2%;
+  letter-spacing: 1.5px;
+  line-height: 45px;
+}
+#Container .aboutApp .writingAreaTwo img {
+  width: 300px;
+  height: 100px;
+}
+#Container .aboutApp .writingAreaTwo .alinks {
+  margin-top: 2%;
+  text-align: center;
+}
+@font-face {
+  font-family: 'Graduate';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Graduate'), local('Graduate-Regular'), url(https://fonts.gstatic.com/s/graduate/v7/C8cg4cs3o2n15t_2YxgR.ttf) format('truetype');
+}
