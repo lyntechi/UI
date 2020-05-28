@@ -429,7 +429,152 @@ body {
   }
 }
 .body {
-  background-color: red;
+  background-color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.body .content-container {
+  margin-top: 5%;
+  background-color: black;
+  color: white;
+}
+.body .content-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+.body .content-container h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 5%;
+}
+@media (max-width: 500px) {
+  .body .content-container h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2.9rem;
+  }
+}
+.body .content-container .firstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 7%;
+  border-radius: 25px;
+}
+@media (max-width: 500px) {
+  .body .content-container .firstRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.body .content-container .firstRow p {
+  font-size: 1.1rem;
+  margin: 5%;
+  text-align: center;
+}
+.body .content-container .firstRow h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  background-color: darkmagenta;
+  opacity: 0.8;
+}
+.body .content-container .firstRow h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: gray;
+  opacity: 0.7;
+  font-weight: bold;
+  padding: 1%;
+}
+.body .content-container .firstRow .Lynda {
+  Width: 300px;
+}
+@media (max-width: 500px) {
+  .body .content-container .firstRow .Lynda {
+    margin-top: 8%;
+    margin-bottom: 25%;
+  }
+}
+.body .content-container .firstRow .Bharat {
+  Width: 300px;
+}
+@media (max-width: 500px) {
+  .body .content-container .firstRow .Bharat {
+    margin-bottom: 25%;
+  }
+}
+.body .content-container .firstRow .Kyle {
+  Width: 300px;
+}
+@media (max-width: 500px) {
+  .body .content-container .firstRow .Kyle {
+    margin-bottom: 25%;
+  }
+}
+.body .content-container .secondRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .body .content-container .secondRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+  }
+}
+.body .content-container .secondRow p {
+  font-size: 1.1rem;
+  margin: 5%;
+  text-align: center;
+}
+.body .content-container .secondRow h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  background-color: darkmagenta;
+  opacity: 0.8;
+}
+.body .content-container .secondRow h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: gray;
+  opacity: 0.7;
+  font-weight: bold;
+  padding: 1%;
+}
+.body .content-container .secondRow .Danial {
+  Width: 300px;
+}
+@media (max-width: 500px) {
+  .body .content-container .secondRow .Danial {
+    margin-bottom: 25%;
+  }
+}
+.body .content-container .secondRow .Kenji {
+  Width: 300px;
+}
+@media (max-width: 500px) {
+  .body .content-container .secondRow .Kenji {
+    margin-bottom: 25%;
+  }
+}
+.body .content-container .secondRow .Enzo {
+  Width: 300px;
+}
+@media (max-width: 500px) {
+  .body .content-container .secondRow .Enzo {
+    margin-bottom: 25%;
+  }
+}
+.body .content-container img {
+  border-radius: 50%;
+  width: 310px;
 }
 @font-face {
   font-family: 'Graduate';
