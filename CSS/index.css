@@ -181,6 +181,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+@media (max-width: 500px) {
+  #Container header {
+    background-attachment: scroll;
+  }
+}
 #Container header .heading {
   display: flex;
   flex-direction: column;
@@ -429,7 +434,7 @@ body {
 }
 .body {
   background-color: black;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', Trebuchet MS;
 }
 .body .content-container {
   margin-top: 5%;
@@ -453,7 +458,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 2.9rem;
+    font-size: 2.6rem;
   }
 }
 .body .content-container .firstRow {
@@ -479,6 +484,7 @@ body {
   display: flex;
   align-items: center;
   border: 1px solid white;
+  border-radius: 15px;
   padding: 2%;
 }
 .body .content-container .firstRow p:hover {
@@ -486,8 +492,9 @@ body {
 }
 @media (max-width: 500px) {
   .body .content-container .firstRow p {
-    width: 95%;
-    font-size: 1.1rem;
+    width: 85%;
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .body .content-container .firstRow h2 {
@@ -495,6 +502,7 @@ body {
   text-align: center;
   background-color: darkmagenta;
   opacity: 0.8;
+  border-radius: 25px;
 }
 .body .content-container .firstRow h3 {
   font-size: 1.5rem;
@@ -537,14 +545,16 @@ body {
   align-items: center;
   border: 1px solid white;
   padding: 2%;
+  border-radius: 15px;
 }
 .body .content-container .secondRow p:hover {
   color: lightblue;
 }
 @media (max-width: 500px) {
   .body .content-container .secondRow p {
-    width: 95%;
-    font-size: 1.1rem;
+    width: 93%;
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .body .content-container .secondRow h2 {
@@ -552,6 +562,7 @@ body {
   text-align: center;
   background-color: darkmagenta;
   opacity: 0.8;
+  border-radius: 25px;
 }
 .body .content-container .secondRow h3 {
   font-size: 1.5rem;
@@ -594,14 +605,16 @@ body {
   align-items: center;
   border: 1px solid white;
   padding: 2%;
+  border-radius: 15px;
 }
 .body .content-container .thirdRow p:hover {
   color: lightblue;
 }
 @media (max-width: 500px) {
   .body .content-container .thirdRow p {
-    width: 95%;
-    font-size: 1.1rem;
+    width: 93%;
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .body .content-container .thirdRow h2 {
@@ -609,6 +622,7 @@ body {
   text-align: center;
   background-color: darkmagenta;
   opacity: 0.8;
+  border-radius: 25px;
 }
 .body .content-container .thirdRow h3 {
   font-size: 1.5rem;
@@ -651,14 +665,16 @@ body {
   align-items: center;
   border: 1px solid white;
   padding: 2%;
+  border-radius: 15px;
 }
 .body .content-container .fourthRow p:hover {
   color: lightblue;
 }
 @media (max-width: 500px) {
   .body .content-container .fourthRow p {
-    width: 95%;
-    font-size: 1.1rem;
+    width: 93%;
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .body .content-container .fourthRow h2 {
@@ -666,6 +682,7 @@ body {
   text-align: center;
   background-color: darkmagenta;
   opacity: 0.8;
+  border-radius: 25px;
 }
 .body .content-container .fourthRow h3 {
   font-size: 1.5rem;
@@ -708,14 +725,16 @@ body {
   align-items: center;
   border: 1px solid white;
   padding: 2%;
+  border-radius: 15px;
 }
 .body .content-container .fifthRow p:hover {
   color: lightblue;
 }
 @media (max-width: 500px) {
   .body .content-container .fifthRow p {
-    width: 95%;
-    font-size: 1.1rem;
+    width: 93%;
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .body .content-container .fifthRow h2 {
@@ -723,6 +742,7 @@ body {
   text-align: center;
   background-color: darkmagenta;
   opacity: 0.8;
+  border-radius: 25px;
 }
 .body .content-container .fifthRow h3 {
   font-size: 1.5rem;
@@ -765,14 +785,16 @@ body {
   align-items: center;
   border: 1px solid white;
   padding: 2%;
+  border-radius: 15px;
 }
 .body .content-container .sixRow p:hover {
   color: lightblue;
 }
 @media (max-width: 500px) {
   .body .content-container .sixRow p {
-    width: 95%;
-    font-size: 1.1rem;
+    width: 93%;
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .body .content-container .sixRow h2 {
@@ -780,6 +802,7 @@ body {
   text-align: center;
   background-color: darkmagenta;
   opacity: 0.8;
+  border-radius: 25px;
 }
 .body .content-container .sixRow h3 {
   font-size: 1.5rem;
@@ -822,14 +845,16 @@ body {
   align-items: center;
   border: 1px solid white;
   padding: 2%;
+  border-radius: 15px;
 }
 .body .content-container .sevenRow p:hover {
   color: lightblue;
 }
 @media (max-width: 500px) {
   .body .content-container .sevenRow p {
-    width: 95%;
-    font-size: 1.1rem;
+    width: 93%;
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .body .content-container .sevenRow h2 {
@@ -837,6 +862,7 @@ body {
   text-align: center;
   background-color: darkmagenta;
   opacity: 0.8;
+  border-radius: 25px;
 }
 .body .content-container .sevenRow h3 {
   font-size: 1.5rem;
