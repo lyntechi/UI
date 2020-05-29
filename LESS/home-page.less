@@ -27,13 +27,13 @@
           flex-direction: column;
           margin-top:10%;
           align-items: center;
+                      
           @media @mobile{
             text-align: center;
         }//this closes media query for heading
           
       h2 {
           
-          display: flex;
           margin-top: 5%;
           font-size: 2rem;
           color: @black;
@@ -47,26 +47,35 @@
 
 
       button {
-        .button-styles(10%,0.8%,20%);
+        // .button-styles(12%,0.3%,25%);
+        width: 30%;
+        margin: 8%;
           align-items: center;
-          background-colOr:@black;
+          background-color:@black;
           color:  @white;
-          border-radius: 25px;
+           text-align: center;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           opacity: 0.8;
+           border-radius: 20px;
+           border: 2px silver solid;
+       
            
-        text-align: center;
-        &:hover{
-         background-color:grey;
-               
-         }//this closes hover
        a{
        text-decoration: none;
-       font-size: 1.2rem;
+       font-size: 1rem;
         color: @ghostwhite;
+        padding: 2%;
+        &:hover{
+            color:grey;
+                  
+            }//this closes hover
        }//this closes a
 
        @media @mobile{
-        .button-styles(40%,3%,100%);
-        border-radius: 0;
+        width: 75%;
+        
         }//this closes media query for heading
        }//this closes button
     }//this closes heading class
