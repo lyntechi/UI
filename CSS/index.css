@@ -84,7 +84,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  max-width: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -164,6 +163,7 @@ nav h1 {
 }
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 body {
   font-family: 'Rokkitt', serif;
@@ -174,17 +174,11 @@ body {
 }
 #Container header {
   background-image: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-  height: 90vh;
   margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-@media (max-width: 500px) {
-  #Container header {
-    height: 600px;
-  }
 }
 #Container header .heading {
   display: flex;
@@ -210,8 +204,9 @@ body {
 }
 #Container header .heading button {
   width: 450px;
-  margin: 200px;
   align-items: center;
+  margin-top: 200px;
+  margin-bottom: 90px;
   background-color: black;
   color: #FFFFFF;
   text-align: center;
@@ -234,9 +229,6 @@ body {
 @media (max-width: 500px) {
   #Container header .heading button {
     border-radius: 40px;
-    width: 90%;
-    margin: 190px;
-    align-items: center;
   }
 }
 #Container .aboutUs {
@@ -477,15 +469,14 @@ body {
   }
 }
 .body .content-container .firstRow p {
-  font-size: 1rem;
-  letter-spacing: 1.3px;
-  line-height: 19px;
+  font-size: 1.1rem;
+  line-height: 17px;
   margin: 5%;
   text-align: center;
+  color: #FFFFFF;
 }
 .body .content-container .firstRow p:hover {
-  color: aqua;
-  font-size: 1.1rem;
+  color: lightblue;
 }
 .body .content-container .firstRow h2 {
   font-size: 2.2rem;
@@ -540,15 +531,14 @@ body {
   }
 }
 .body .content-container .secondRow p {
-  font-size: 1rem;
-  letter-spacing: 1.3px;
-  line-height: 19px;
+  font-size: 1.1rem;
+  line-height: 17px;
   margin: 5%;
   text-align: center;
+  color: white;
 }
 .body .content-container .secondRow p:hover {
-  color: aqua;
-  font-size: 1.1rem;
+  color: lightblue;
 }
 .body .content-container .secondRow h2 {
   font-size: 2.2rem;

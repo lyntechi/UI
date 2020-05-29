@@ -1,5 +1,7 @@
         *{
             box-sizing: border-box;
+            // border: 2px red solid;
+            max-width: 100%;
         }
 
         body{
@@ -12,15 +14,12 @@
      margin: 0 auto;
       header {
       background-image: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-      height: 90vh; 
       margin: 0 auto;
       background-position: center; 
       background-repeat: no-repeat; 
       background-size: cover;
       background-attachment: fixed;
-      @media @mobile{
-        height:600px;
-    }//this closes media query for heading
+     
       .heading {
           .flex(flex,column);
           margin-top:10%;
@@ -45,20 +44,17 @@
 
 
       button {
-        // .button-styles(12%,0.3%,25%);
-        // width: 30%;
-        // margin: 8%;
-        //   align-items: center;
-        //  .button-styles(28%, 10%, center);
-        .button-styles(450px, 200px, center);
+        .button-styles(450px,center);
+          margin-top: 200px;
+          margin-bottom: 90px;
           background-color:@black;
           color:  @white;
-           text-align: center;
-           .flex(flex,row);
-           justify-content: space-between;
-           opacity: 0.8;
-           border-radius: 20px;
-           border: 2px silver solid;
+          text-align: center;
+          .flex(flex,row);
+          justify-content: space-between;
+          opacity: 0.8;
+          border-radius: 20px;
+          border: 2px silver solid;
        
            
        a{
@@ -74,7 +70,7 @@
 
        @media @mobile{
         border-radius: 40px;
-        .button-styles(90%, 190px, center);
+        // .button-styles(90%, 190px, center);
         }//this closes media query for heading
        }//this closes button
     }//this closes heading class
