@@ -10,7 +10,6 @@
     #Container {
      width: 100%;
      margin: 0 auto;
-            
       header {
       background-image: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
       height: 90vh; 
@@ -23,8 +22,7 @@
         height:600px;
     }//this closes media query for heading
       .heading {
-          display: flex;
-          flex-direction: column;
+          .flex(flex,column);
           margin-top:10%;
           align-items: center;
                       
@@ -34,7 +32,7 @@
           
       h2 {
           
-          margin-top: 5%;
+          margin: 2% 0;
           font-size: 2rem;
           color: @black;
           letter-spacing: 10px;
@@ -48,14 +46,15 @@
 
       button {
         // .button-styles(12%,0.3%,25%);
-        width: 30%;
-        margin: 8%;
-          align-items: center;
+        // width: 30%;
+        // margin: 8%;
+        //   align-items: center;
+        //  .button-styles(28%, 10%, center);
+        .button-styles(450px, 200px, center);
           background-color:@black;
           color:  @white;
            text-align: center;
-           display: flex;
-           flex-direction: row;
+           .flex(flex,row);
            justify-content: space-between;
            opacity: 0.8;
            border-radius: 20px;
@@ -74,8 +73,8 @@
        }//this closes a
 
        @media @mobile{
-        width: 75%;
-        
+        border-radius: 40px;
+        .button-styles(90%, 190px, center);
         }//this closes media query for heading
        }//this closes button
     }//this closes heading class
@@ -84,8 +83,7 @@
 
  .aboutUs{
     background-color: @white;
-    display: flex;
-    flex-direction: column;
+    .flex(flex,column);
     align-items: center;
     width: 60%;
     margin: 3% 20%;
@@ -137,8 +135,7 @@
      
 
     .stepsInfo{
-        display: flex;
-        flex-direction: column;
+        .flex(flex,column);
         background-color: @gray;
         opacity: 0.7;
         text-align: center;
@@ -192,11 +189,9 @@
 
 
     .missionStatement{
-        // margin: 2% 0;
+        
      background-color: @gainsboro;
-    display: flex;
-    flex-direction: column;
-   
+    .flex(flex,column);
     height: 300px;
     align-items: center;
     @media @mobile{
@@ -224,15 +219,11 @@
 
 
     .fitnessImages{
-        display: flex;
-        flex-direction: row;
-    width: 100%;
-    opacity: 0.8;
-        // justify-content:space-evenly;
-        // margin: 4% 0;
+        .flex(flex,row);
+        width: 100%;
+        opacity: 0.8;
         @media @mobile{
-            display: flex;
-            flex-direction: column;
+            .flex(flex,column);
             align-items: center;
         }//this closes media query for fitnessImages
         img {
@@ -245,28 +236,27 @@
         }//this closes img
     }//this closes mission statement class
     .aboutApp{
-        display: flex;
-        flex-direction: row;
+        .flex(flex,row);
         width: 100%;
        
         .writingAreaTwo{
-            background-color: @black;
-            color: @white;
+        background-color: @black;
+        color: @white;
         display: flex;
         flex-direction: column;
         padding: 8% 0;
         width: 100%;
         
             h2{
-                display:flex;
-                flex-direction: column;
+                .flex(flex,column);
                 font-size: 2.2rem;
                 text-align: center;
                 padding-top: 2%;
                 letter-spacing: 1.5px;
                 line-height: 45px;
                 @media @mobile{
-                    font-size: 1.5rem;
+                
+                font-size: 1.5rem;
                     
                 }//this closes media query for h2
             }//this closes h2
@@ -282,8 +272,8 @@
             margin-top: 2%;
            text-align: center;
            @media @mobile{
-            display: flex;
-            flex-direction: row;
+            .flex(flex,row);
+        
         }//this closes media query for alinks
         }//this closes alinks
         

@@ -198,7 +198,7 @@ body {
   }
 }
 #Container header .heading h2 {
-  margin-top: 5%;
+  margin: 2% 0;
   font-size: 2rem;
   color: black;
   letter-spacing: 10px;
@@ -209,8 +209,8 @@ body {
   text-shadow: 2.5px 2.5px 2.5px aqua;
 }
 #Container header .heading button {
-  width: 30%;
-  margin: 8%;
+  width: 450px;
+  margin: 200px;
   align-items: center;
   background-color: black;
   color: #FFFFFF;
@@ -233,7 +233,10 @@ body {
 }
 @media (max-width: 500px) {
   #Container header .heading button {
-    width: 75%;
+    border-radius: 40px;
+    width: 90%;
+    margin: 190px;
+    align-items: center;
   }
 }
 #Container .aboutUs {
